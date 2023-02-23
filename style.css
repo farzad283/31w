@@ -77,7 +77,11 @@ html {
 .recherche input {
   height: 30px;
   background-color: azure;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+.recherche button {
+  height: 30px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 /* ------------------- Base*/
