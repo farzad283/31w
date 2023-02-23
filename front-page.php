@@ -1,6 +1,6 @@
 <?php
 /**
- * Modele index.php représente le modéle par défault du thème
+   Modele index.php représente le modéle par défault du thème
 */
 ?>
 
@@ -17,9 +17,6 @@
             //the_permalink();?>
             <article>
                 <h3><a href="<?php the_permalink(); ?>"><?= get_the_title() ?></a></h3>
-
-                //the_content();
-                //the_excerpt();
                 <p><?php echo wp_trim_words(get_the_excerpt(), 4);?></p>
             </article>
             <?php endwhile;?>
