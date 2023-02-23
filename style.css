@@ -69,8 +69,10 @@ html {
 }
 
 .recherche article {
-  background-color: azure;
+  background-color: lightblue;
   margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* ------------------- Base*/
