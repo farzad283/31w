@@ -6,7 +6,7 @@ https://aecweb9.sg-host.com/
 github:
 https://github.com/farzad283/31w/tree/exer2
 
-Exercice2:
+TP1:
 Améliorer la stucture générale du thème
 
     Formater en scss l'affichage de fichier markdown
