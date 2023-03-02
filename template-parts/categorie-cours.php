@@ -1,9 +1,9 @@
+
 <?php
-/*
-* template-part qui permettra d'afficher 
-* un article provenant d'un conteneur de class blockflex
-* pour un article de catégorie cours
-*/ 
+/**
+ * template-part qui permettra d'afficher 
+ * un article provenant d'un conteneur  de class blocflex
+ */
 $titre = get_the_title();
 $sigle = substr($titre, 0, 7);
 $titre_long = substr($titre, 7, -5);

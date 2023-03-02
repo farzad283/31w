@@ -1,9 +1,9 @@
 <?php
-/*
-* template-part qui permettra d'afficher 
-* un article provenant d'un conteneur de class blockflex
-* pour un article de catégorie note-wp
-*/ 
+/**
+ * template-part qui permettra d'afficher 
+ * un article provenant d'un conteneur  de class blocflex
+ * pour un article de catégorie note-wp
+ */
 $titre = get_the_title();
 //if (substr($titre,0,1) == "0"){}
 ?>
