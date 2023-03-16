@@ -5,23 +5,38 @@ Mise en page avec
 .site__entete {
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: antiquewhite;
+    background-color: #aebebf;;
   }
   
   .site__main {
     grid-area: main;
     overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+    padding-left: 30px;
+    padding-right: 30px;
   }
   
   .site__footer {
     grid-area: footer;
-    background-color: antiquewhite;
+    background-color: #aebebf;
+    text-align: center;
   }
 
   .site__aside {
     grid-area: aside;
-    background-color: rgb(47, 148, 210);
+    background-color: #aebebf;
+    border-radius: 20px;
   }
+
+  .site__aside h3{
+    text-align: center;
+  }
+
+  .site__aside a{
+    text-decoration: none;
+    color: rgba(63, 22, 22, 0.593);
+    font-weight: bold;
+  }
+
 
 /* body ou un conteneur global */
   .site {

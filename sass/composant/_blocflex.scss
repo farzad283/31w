@@ -7,9 +7,18 @@
 .blocflex__article{
     margin: 10px;
     padding: 5px;
-    border: 1px solid #aaa;
+    // border: 1px solid #aaa;
     flex: 1 0 300px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #e9edee;;
 }
+
+.blocflex__article h5>a{
+    text-decoration: none;
+    color: rgba(63, 22, 22, 0.593);
+}
+
 .blocflex__galerie{
     flex: 1 0 100%;
 }
