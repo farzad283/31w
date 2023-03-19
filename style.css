@@ -35,6 +35,12 @@ html {
 
 header h1, header h2 {
   text-align: center;
+  color: #642e2a;
+}
+
+header h1 a {
+  color: #21759b;
+  text-decoration: navajowhite;
 }
 
 .custom-logo {
@@ -110,7 +116,7 @@ header h1, header h2 {
   font-size: larger;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: purple;
+  color: #642e2a;
 }
 
 .recherche {
@@ -140,6 +146,11 @@ header h1, header h2 {
 
 .blocflex__galerie {
   flex: 1 0 100%;
+  text-align: center;
+}
+
+.bouton__ouvrir {
+  margin-bottom: 20px;
 }
 
 .main__recherche article {
@@ -148,39 +159,53 @@ header h1, header h2 {
   padding: 5px;
   border-radius: 10px;
 }
-.main__recherche input {
+
+.recherche__input {
   height: 30px;
   background-color: azure;
   border-radius: 5px 0px 0px 5px;
-}
-.main__recherche button {
-  height: 30px;
-  border-radius: 0px 5px 5px 0px;
+  font-size: 100%;
 }
 
-.menu-cours-container .menu {
+.recherche__button {
+  height: 30px;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 100%;
+}
+
+.menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 @media screen and (min-width: 1000px) {
-  .menu-cours-container .menu {
+  .menu {
     flex-direction: column;
   }
 }
-.menu-cours-container .menu .menu-item {
+.menu .menu-item {
   list-style-type: none;
 }
-.menu-cours-container .menu .menu-item a .cours__sigle {
+.menu a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: bold;
+}
+.menu a .cours__sigle {
   padding: 3px;
 }
-.menu-cours-container .menu .menu-item a .cours__titre {
+.menu a .cours__titre {
   display: none;
 }
 @media screen and (min-width: 1000px) {
-  .menu-cours-container .menu .menu-item a .cours__titre {
+  .menu a .cours__titre {
     display: block;
   }
+}
+
+#menu-footer {
+  flex-direction: row;
 }
 
 /* ------------------- Base*/
@@ -273,6 +298,7 @@ Mise en page avec
 
 /* body ou un conteneur global */
 .site {
+  margin: 0;
   width: 100vw;
   overflow-x: hidden;
   display: grid;

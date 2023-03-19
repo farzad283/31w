@@ -1,28 +1,38 @@
-.menu-cours-container { //nav
+.menu-cours-container{
 
-    .menu{ // ul
-        display : flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        @media screen and (min-width : 1000px) {
-            flex-direction: column;
+}
+.menu{ //ul
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media screen and (min-width : 1000px){
+        flex-direction: column; 
+                       
+    }
+
+    .menu-item{ //li
+        list-style-type:none;
+
+
+    }
+    a{
+        text-decoration: none;
+        color: #555555;
+        font-weight: bold;
+        .cours__sigle{
+            padding:  3px;
         }
-    
-        .menu-item{ // li
-                list-style-type: none;
-                
-            a{
-                .cours__sigle{
-                    padding : 3px;
-                }
-                .cours__titre{
-                    display : none;
-                    @media screen and (min-width : 1000px) {
-                        display : block;
-                    }
-                }
+        .cours__titre{
+            display: none;
+            @media screen and (min-width : 1000px){
+                display: block;                
             }
+
         }
     }
-    
-    }
+}
+
+#menu-footer{
+    flex-direction: row;    
+}

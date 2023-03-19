@@ -10,6 +10,12 @@
 
 header h1 , header h2 {
     text-align: center;
+    color: #642e2a;
+}
+
+header h1 a{
+    color: #21759b;
+    text-decoration: navajowhite;
 }
 
 .custom-logo{
@@ -81,7 +87,7 @@ header h1 , header h2 {
         font-size: larger;
     }
     a:hover {
-        color : purple;
+        color : #642e2a;
     }
 
 }
