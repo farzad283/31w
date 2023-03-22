@@ -62,6 +62,11 @@ add_theme_support( 'custom-logo',
                         'width'  => 150,
                     ) );
 
+add_theme_support('custom-background');
+
+
+
+
 function perso_menu_item_title($title, $item, $args) {
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu  
   
