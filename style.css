@@ -128,6 +128,7 @@ header h1 a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-right: 20px;
 }
 
 .blocflex__article {
@@ -188,12 +189,20 @@ header h1 a {
   list-style-type: none;
 }
 .menu a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  font-variant: small-caps;
   color: #555555;
   font-weight: bold;
 }
 .menu a .cours__sigle {
-  padding: 3px;
+  padding: 1px 3px;
+}
+@media screen and (min-width: 1000px) {
+  .menu a .cours__sigle {
+    padding: 3px;
+  }
 }
 .menu a .cours__titre {
   display: none;
@@ -259,6 +268,10 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.invisible {
+  display: none;
+}
+
 /* ------------------- Layout*/
 /*
 Mise en page avec
@@ -272,7 +285,8 @@ Mise en page avec
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: rgb(118, 142, 149);
+  background-color: rgba(118, 142, 149, 0.02);
+  margin-left: 20px;
 }
 
 .site__footer {
@@ -296,6 +310,7 @@ Mise en page avec
   text-decoration: none;
   color: rgba(63, 22, 22, 0.593);
   font-weight: bold;
+  padding-bottom: 25px;
 }
 
 /* body ou un conteneur global */
@@ -306,7 +321,6 @@ Mise en page avec
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .site {
@@ -317,7 +331,6 @@ Mise en page avec
 
 .no-aside {
   grid-template-areas: "header" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .no-aside {
