@@ -2,12 +2,19 @@
 //template footer.php
 ?>
 <footer class="site__footer">
-    <h5>Pied de page</h5>
-    <?php wp_nav_menu(array(
-                    'menu'  => 'footer',
-                    'container' => 'nav'
-                )); ?> 
+    <section class="footer__widget">
+        <div> <?php dynamic_sidebar( 'pied-page-1' ); ?></div>
+        <div> <?php dynamic_sidebar( 'pied-page-2' ); ?></div>
+        <div> <?php dynamic_sidebar( 'pied-page-3' ); ?></div>
+    </section>
+    <section class="footer__lien">
+        <div><?php wp_nav_menu(array('menu'=>'lien-externe')); ?></div>
+        <div><?php ?></div>
+        <div><?php ?></div>
+    </section>
+   
 </footer>
 <?php wp_footer(); ?>
 </body>
 </html>
+

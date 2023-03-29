@@ -6,7 +6,7 @@ Mise en page avec
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: transparent;
-    // background-color: rgb(255, 255, 255, 2%);
+    // background-color: rgb(255, 355, 255, .7);
   }
   
   .site__main {
@@ -52,6 +52,7 @@ Mise en page avec
       "header"
       "aside"
       "main"
+      // "aside2"
       "footer";
     // row-gap: 50px;
     @media screen and (min-width: 1000px){
@@ -59,6 +60,7 @@ Mise en page avec
       grid-template-areas:
       "header header"
       "aside main"
+      // "aside2 main"
       "footer footer";
     }
   }

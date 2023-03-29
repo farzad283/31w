@@ -86,8 +86,40 @@ function perso_menu_item_title($title, $item, $args) {
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
 
+///////////////////////////////////// Enregtrement d'un sidebar
+// Enregistrer le sidebar
+function enregistrer_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'pied de page 1', '31w-mohammadreza-habibzadeh' ),
+        'id' => 'pied-page-1',
+        'description' => __( 'Une zone  widget pour afficher des widgets dans le pied de page.', '31w-mohammadreza-habibzadeh' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
 
+    register_sidebar( array(
+        'name' => __( 'pied de page 2', '31w-mohammadreza-habibzadeh' ),
+        'id' => 'pied-page-2',
+        'description' => __( 'Une zone  widget pour afficher des widgets dans le pied de page.', '31w-mohammadreza-habibzadeh' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
 
+    register_sidebar( array(
+        'name' => __( 'pied de page 3', '31w-mohammadreza-habibzadeh' ),
+        'id' => 'pied-page-3',
+        'description' => __( 'Une zone  widget pour afficher des widgets dans le pied de page.', '31w-mohammadreza-habibzadeh' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );
 
 
 

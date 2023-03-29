@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
 Theme Name: 31w Mohammadreza habibzadeh
-Theme URI: https://github.com/farzad283
+Theme URI: https://refrenced.ca
 Author: Mohammadreza Habibzadeh
-Author URI: https://eddytuto.ca
+Author URI: https://github.com/farzad283
 Description: Introductin à la création d'un thème Wordpress
 Version: 1.0
 Requires at least: 6.1.1
@@ -217,6 +217,27 @@ header h1 a {
   flex-direction: row;
   position: relative;
   top: 25px;
+}
+
+.site__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__widget {
+  display: flex;
+  flex-direction: row;
+}
+.footer__widget div {
+  flex: 1 0 33%;
+}
+
+.footer__lien {
+  display: flex;
+  flex-direction: row;
+}
+.footer__lien div {
+  flex: 1 0 33%;
 }
 
 /* ------------------- Base*/
