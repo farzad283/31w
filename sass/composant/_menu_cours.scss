@@ -21,10 +21,11 @@
     }
     a{
         display: flex;
+        justify-content: center;
         align-items: center;
         text-decoration: none;
         font-variant: small-caps;
-        color: #555555;
+        color: white;
         font-weight: bold;
         .cours__sigle{
             padding:  1px 3px;

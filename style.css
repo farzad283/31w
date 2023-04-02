@@ -190,10 +190,11 @@ header h1 a {
 }
 .menu a {
   display: flex;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   font-variant: small-caps;
-  color: #555555;
+  color: white;
   font-weight: bold;
 }
 .menu a .cours__sigle {
