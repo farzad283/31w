@@ -240,6 +240,36 @@ header h1 a {
   flex: 1 0 33%;
 }
 
+.menu__bloc .menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.menu__bloc .menu .menu-item {
+  flex: 1 0 33%;
+  background-color: #a1604d;
+  padding: 5px 400px;
+  border-radius: 5px;
+}
+.menu__bloc .menu .menu-item a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(243, 239, 239);
+}
+
+.viewport {
+  min-height: 30vh;
+  padding: 0 7rem;
+}
+
+.viewport h1 {
+  color: #21759b;
+}
+
+.viewport h4 {
+  color: #642e2a;
+}
+
 /* ------------------- Base*/
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
@@ -300,7 +330,8 @@ Mise en page avec
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: transparent;
+  background-color: rgba(135, 169, 174, 0.7);
+  height: 150px;
 }
 
 .site__main {

@@ -5,8 +5,9 @@ Mise en page avec
 .site__entete {
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: transparent;
-    // background-color: rgb(255, 355, 255, .7);
+    // background-color: transparent;
+    background-color: rgba(135, 169, 174, 0.7);;
+    height: 150px;
   }
   
   .site__main {
