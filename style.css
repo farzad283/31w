@@ -243,6 +243,7 @@ header h1 a {
 
 .menu__bloc .menu {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   list-style-type: none;
   gap: 10px;
@@ -250,22 +251,34 @@ header h1 a {
 .menu__bloc .menu .menu-item {
   flex: 1 0 33%;
   background-color: #a1604d;
-  padding: 5px 400px;
+  padding: 5px 260px;
   border-radius: 5px;
 }
 .menu__bloc .menu .menu-item a {
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: rgb(243, 239, 239);
   font-weight: lighter;
 }
 
+/*--------------------------------------------*/
+.evenement__porte {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bell");
+  background-repeat: no-repeat;
+}
+.evenement__porte a {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+}
+
 .viewport {
   min-height: 30vh;
   padding: 0 7rem;
+  border: 1px solid blue;
 }
 
-.viewport h1 {
+.viewport h2 {
   color: #21759b;
 }
 

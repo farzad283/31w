@@ -4,16 +4,21 @@
 */
 get_header() ?>
 <main class="site__main">
+
+    <section class="viewport-header">
+        <div class="header">
+            <h1>Tp2</h1>
+            <h4>Auteur: Mohammadreza Habibzadeh</h4>
+            <h4>Cours: 31w - Intoduction à un gestionnaire de contenu</h4>
+        </div>
+    </section>   
+
     <!-- <code>front-page.php</code> -->
-    <section class="viewport">
-        <h1>Exer4/Tp2</h1>
-        <h4>Auteur: Mohammadreza Habibzadeh</h4>
-        <h4>Cours: 31w - Intoduction à un gestionnaire de contenu</h4>
+    <section class="viewport">  
         <?php wp_nav_menu(array(
             "menu" => "evenement",
             "container"=> "nav",
             "container_class" => "menu__bloc"
-
         ))?>
     </section>
 
@@ -29,5 +34,9 @@ get_header() ?>
              endwhile; 
         endif; ?>   
     </section>
+
+
+
+    
 </main> 
 <?php get_footer(); ?>
