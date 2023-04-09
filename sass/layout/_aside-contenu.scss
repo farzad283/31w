@@ -12,9 +12,8 @@ Mise en page avec
   
   .site__main {
     grid-area: main;
-    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+    // overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
     background-color: rgb(118, 142, 149, 2%);
-    margin-left: 20px;
   }
   
   .site__footer {

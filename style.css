@@ -47,6 +47,12 @@ header h1 a {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 500px) {
+  .custom-logo-link {
+    margin-top: -100px;
+  }
+}
+
 .menusearch {
   display: flex;
   flex-direction: column-reverse;
@@ -91,17 +97,19 @@ header h1 a {
 }
 .menu-entete-container .menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
   list-style-type: none;
   gap: 100px;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .menu-entete-container .menu {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    gap: 0px;
+    margin-right: -80px;
   }
 }
 .menu-entete-container .menu .menu-item {
@@ -129,6 +137,13 @@ header h1 a {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-right: 20px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 500px) {
+  .blocflex {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .blocflex__article {
@@ -240,25 +255,40 @@ header h1 a {
 .footer__lien div {
   flex: 1 0 33%;
 }
+@media screen and (max-width: 500px) {
+  .footer__lien div {
+    flex: 0;
+  }
+}
 
 .menu__bloc .menu {
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-flow: row wrap;
   list-style-type: none;
-  gap: 10px;
+  gap: 150px;
+}
+@media screen and (max-width: 500px) {
+  .menu__bloc .menu {
+    gap: 20px;
+  }
 }
 .menu__bloc .menu .menu-item {
-  flex: 1 0 33%;
-  background-color: #a1604d;
-  padding: 5px 260px;
-  border-radius: 5px;
+  background-color: #5f5e70;
+  border-radius: 10px;
+  width: 340px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
 .menu__bloc .menu .menu-item a {
   font-size: 1.4rem;
   text-decoration: none;
-  color: rgb(243, 239, 239);
   font-weight: lighter;
+  width: 300px;
 }
 
 /*--------------------------------------------*/
@@ -269,21 +299,54 @@ header h1 a {
 .evenement__porte a {
   display: flex;
   flex-direction: column;
-  width: 650px;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+.evenement__porte span {
+  text-align: center;
+  width: 270px;
+  font-size: 14px;
+  margin-top: 20px;
 }
 
 .viewport {
   min-height: 30vh;
-  padding: 0 7rem;
-  border: 1px solid blue;
+  margin-left: -70px;
+  margin-top: 80px;
+  padding: 10px;
+}
+@media screen and (max-width: 500px) {
+  .viewport {
+    margin-left: -40px;
+  }
 }
 
-.viewport h2 {
+.viewport-header .header {
+  margin-left: 60px;
+}
+.viewport-header .header h1 {
   color: #21759b;
 }
-
-.viewport h4 {
+@media screen and (max-width: 500px) {
+  .viewport-header .header h1 {
+    font-size: 26px;
+  }
+}
+.viewport-header .header h4 {
   color: #642e2a;
+}
+@media screen and (max-width: 500px) {
+  .viewport-header .header h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .viewport-header .header {
+    text-align: center;
+    margin-bottom: -30px;
+    margin-left: 0px;
+  }
 }
 
 /* ------------------- Base*/
@@ -352,9 +415,7 @@ Mise en page avec
 
 .site__main {
   grid-area: main;
-  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
   background-color: rgba(118, 142, 149, 0.02);
-  margin-left: 20px;
 }
 
 .site__footer {

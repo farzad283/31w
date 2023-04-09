@@ -7,7 +7,7 @@ get_header() ?>
 
     <section class="viewport-header">
         <div class="header">
-            <h1>Tp2</h1>
+            <h1>TP2</h1>
             <h4>Auteur: Mohammadreza Habibzadeh</h4>
             <h4>Cours: 31w - Intoduction à un gestionnaire de contenu</h4>
         </div>

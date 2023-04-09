@@ -16,5 +16,8 @@
     flex-direction: row;
     div{
         flex: 1 0 33%;
+        @media screen and (max-width: 500px) {
+            flex: 0;
+           }
     }
 }
