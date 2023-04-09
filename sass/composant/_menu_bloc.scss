@@ -21,6 +21,14 @@
             justify-content: center;
             align-items: center;
             padding: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
+            transform: perspective(1000px) rotateX(0) rotateY(0); 
+          
+            &:hover {
+              background-color: #7a7990;
+              box-shadow: inset -3px -3px 7px rgba(255, 255, 255, 0.1), inset 3px 3px 7px rgba(0, 0, 0, 0.5); 
+              transform: perspective(1000px) rotateX(-5deg) rotateY(20deg); 
+            }
         
 
             a{

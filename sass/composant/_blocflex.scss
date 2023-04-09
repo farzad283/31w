@@ -12,11 +12,18 @@
 .blocflex__article{
     margin: 10px;
     padding: 5px;
-    // border: 1px solid #aaa;
     flex: 1 0 300px;
     border-radius: 20px;
     text-align: center;
-    background-color: #e9edee;;
+    background-color: #e9edee;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
+    transform: perspective(1000px) rotateX(0) rotateY(0); 
+  
+    &:hover {
+      background-color: #d3d8d9;
+      box-shadow: inset -3px -3px 7px rgba(255, 255, 255, 0.1), inset 3px 3px 7px rgba(0, 0, 0, 0.5);
+      transform: perspective(1000px) rotateX(-5deg) rotateY(20deg); 
+    }
 }
 
 .blocflex__article h5>a{

@@ -153,6 +153,13 @@ header h1 a {
   border-radius: 20px;
   text-align: center;
   background-color: #e9edee;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transform: perspective(1000px) rotateX(0) rotateY(0);
+}
+.blocflex__article:hover {
+  background-color: #d3d8d9;
+  box-shadow: inset -3px -3px 7px rgba(255, 255, 255, 0.1), inset 3px 3px 7px rgba(0, 0, 0, 0.5);
+  transform: perspective(1000px) rotateX(-5deg) rotateY(20deg);
 }
 
 .blocflex__article h5 > a {
@@ -283,6 +290,13 @@ header h1 a {
   justify-content: center;
   align-items: center;
   padding: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transform: perspective(1000px) rotateX(0) rotateY(0);
+}
+.menu__bloc .menu .menu-item:hover {
+  background-color: #7a7990;
+  box-shadow: inset -3px -3px 7px rgba(255, 255, 255, 0.1), inset 3px 3px 7px rgba(0, 0, 0, 0.5);
+  transform: perspective(1000px) rotateX(-5deg) rotateY(20deg);
 }
 .menu__bloc .menu .menu-item a {
   font-size: 1.4rem;
