@@ -154,4 +154,5 @@ add_action( 'widgets_init', 'enregistrer_sidebar' );
 
 
 
+
 ?>

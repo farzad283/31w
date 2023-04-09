@@ -370,6 +370,15 @@ header h1 a {
   }
 }
 
+.entry-content {
+  margin-left: 25px;
+}
+
+.entry-meta {
+  text-align: center;
+  color: blue;
+}
+
 /* ------------------- Base*/
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
