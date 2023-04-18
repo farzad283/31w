@@ -389,6 +389,7 @@ header h1 a {
 .site__errour .menu {
   display: flex;
   flex-flow: row wrap;
+  gap: 5px;
 }
 
 /* ------------------- Base*/

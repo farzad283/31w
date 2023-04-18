@@ -13,11 +13,9 @@
 
   
         <h5>Nos choix de cours</h5>
-
-<?php 
-
-        $category = get_queried_object();
-        if (isset($category))
+    <?php 
+        $cours = get_queried_object();
+        if (isset($cours))
         {
             $lemenu = $cours->slug;
         }else{
@@ -27,7 +25,23 @@
         wp_nav_menu(array(
             "menu" => $lemenu,
             "container" => "nav"
-        )); ?>
+    )); ?>
+
+
+    <h5>Les notes de cours</h5>
+    <?php 
+        $category = get_queried_object();
+        if (isset($category))
+        {
+            $lemenu = $category->slug;
+        }else{
+            $lemenu = "note-wp";
+        }
+
+        wp_nav_menu(array(
+            "menu" => $lemenu,
+            "container" => "nav"
+    )); ?>
 
 
 </main>
