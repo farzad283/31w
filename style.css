@@ -379,6 +379,18 @@ header h1 a {
   color: blue;
 }
 
+.site__errour h1, .site__errour h4, .site__errour h5 {
+  color: brown;
+  text-align: center;
+}
+.site__errour .recherche {
+  justify-content: center;
+}
+.site__errour .menu {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 /* ------------------- Base*/
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
