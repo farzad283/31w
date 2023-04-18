@@ -379,9 +379,15 @@ header h1 a {
   color: blue;
 }
 
+.site__errour {
+  background-image: url("http://aecweb9.sg-host.com/wp-content/uploads/2023/03/pexels-codioful-formerly-gradienta-7130538-scaled.jpg");
+}
 .site__errour h1, .site__errour h4, .site__errour h5 {
   color: brown;
   text-align: center;
+}
+.site__errour .menu a {
+  color: blue;
 }
 .site__errour .recherche {
   justify-content: center;
